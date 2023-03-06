@@ -8,7 +8,8 @@ export default class Ccomponent extends React.Component {
 
         this.state = {
             input1: "",
-            input2: ""
+            input2: "",
+            submit: ""
         };
 
     }
@@ -33,20 +34,36 @@ export default class Ccomponent extends React.Component {
 
     }
 
+    handleClick = () => {
+
+        this.setState({
+            submit: (this.state.input2/(this.state.input1 * 0.01 * this.state.input1 * 0.01)).toFixed(2)
+        });
+
+    }
 
 
     render() {
+
         return (
+
             <div>
 
-                <p>Укажите ваш рост: <input id = "r1" type = "range" min={"1"} max = {"300"} step = {"1"} onChange={this.handleChange1} /></p>
-                <p>{this.state.input1}</p>
+                <p>Укажите ваш рост: <input type="range" min={"1"} max={"300"} step={"0.1"} onChange={this.handleChange1} /></p>
 
-                <p>Укажите ваш рост: <input type = "range" min={"1"} max = {"300"} step = {"1"} onChange={this.handleChange2} /></p>
+                <p><input type = "text" value={this.state.input1}></input></p>
+
+                <p>Укажите ваш вес: <input type="range" min={"1"} max={"300"} step={"0.1"} onChange={this.handleChange2} /></p>
                 <p>{this.state.input2}</p>
+
+                <button onClick={ this.handleClick}>Рассчитать ИМТ</button>
+
+                <p>{this.state.submit}</p>
 
 
             </div>
+
+
         )
 
     }
