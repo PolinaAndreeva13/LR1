@@ -1,4 +1,4 @@
-import './App.css';
+import './App.css';//D:\programming\github\LR1\my-app
 import Ccomponent from "./Code";
 
 function App() {
