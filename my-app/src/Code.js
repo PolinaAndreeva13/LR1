@@ -49,11 +49,11 @@ export default class Ccomponent extends React.Component {
 
             <div>
 
-                <p>Укажите ваш рост: <input type="range" min={"1"} max={"300"} step={"0.1"} onChange={this.handleChange1} /></p>
+                <p>Укажите ваш рост: <input type="range" min={"1"} max={"250"} step={"1"} onChange={this.handleChange1} /></p>
 
                 <p><input type = "text" value={this.state.input1}></input></p>
 
-                <p>Укажите ваш вес: <input type="range" min={"1"} max={"300"} step={"0.1"} onChange={this.handleChange2} /></p>
+                <p>Укажите ваш вес: <input type="range" min={"1"} max={"150"} step={"1"} onChange={this.handleChange2} /></p>
                 <p>{this.state.input2}</p>
 
                 <button onClick={ this.handleClick}>Рассчитать ИМТ</button>

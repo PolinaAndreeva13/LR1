@@ -1,11 +1,12 @@
 import Ccomponent from "./Code";
+import React from "react";
 
 function App() {
   return (
-    <div>
-      <header>
+    <div className="App">
+      <nav>
         <Ccomponent/>
-      </header>
+      </nav>
     </div>
   );
 }
