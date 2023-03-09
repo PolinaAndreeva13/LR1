@@ -1,12 +1,19 @@
+import './App.css';
 import Ccomponent from "./Code";
-import React from "react";
 
 function App() {
   return (
     <div className="App">
-      <nav>
-        <Ccomponent/>
-      </nav>
+      <header className="App-header">
+        <a
+          className="App-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <Ccomponent/>
+        </a>
+      </header>
     </div>
   );
 }
