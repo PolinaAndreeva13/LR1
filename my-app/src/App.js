@@ -1,9 +1,8 @@
 //D:\programming\github\LR1\my-app
 import './head/head.css';
 import './body/body.css';
-import formula from '/body/BMI_formula_picture.png"';
-
 import Ccomponent from "./Code";
+import img from './formula.png';
 
 function App() {
   return (
@@ -36,18 +35,21 @@ function App() {
           </p>
         </div>
         
-        <div className='reference_information_style'>
+        <div className='standart_text'>
           <h1>
           Справочная информация
           </h1>
 
         </div>
 
+
         <div className='standart_text'>
 
         <p>Индекс массы тела рассчитывается по формуле:</p>
-          <img src='formula'/>
+        
+        <p2><img src= {img}/></p2>
 
+        <p>В соответствии с рекомендациями ВОЗ разработана следующая интерпретация показателей ИМТ:</p>
         </div>
 
       </div>

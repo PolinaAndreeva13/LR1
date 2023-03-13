@@ -1,6 +1,6 @@
 .body {
     background-color: #51675b;
-    height: 100vh;
+    height: 100%;
     display: grid;
     grid-template-rows: 125px;
     
@@ -32,4 +32,8 @@
 
 h1{
   font-size: 30px;
+}
+
+p2{
+  margin-left: 10%;
 }
