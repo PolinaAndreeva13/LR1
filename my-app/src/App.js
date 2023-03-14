@@ -1,10 +1,10 @@
-import Ccomponent from "./Code";
+import Components from "./Code";
 
 function App() {
   return (
     <div>
       <header>
-        <Ccomponent/>
+        <Components/>
       </header>
     </div>
   );
